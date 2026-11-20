@@ -13,17 +13,22 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@ant-design/icons-react-native": "^2.3.2",
+    "@ant-design/react-native": "^5.4.3",
     "@expo/metro-runtime": "~5.0.5",
     "expo": "~53.0.0",
     "expo-secure-store": "~14.2.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.0",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
     "react-native-web": "~0.20.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
     "@types/react": "~19.0.0",
+    "@vitest/coverage-v8": "^3.2.7",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~9.2.0",
     "typescript": "~5.8.0",

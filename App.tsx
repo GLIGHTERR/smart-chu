@@ -24,5 +24,5 @@ export default function App() {
   const visibleError = startupError ?? config.error;
   if (visibleError) return <Screen><ErrorState message={visibleError} /></Screen>;
   if (!api || session === undefined) return <Screen><LoadingState /></Screen>;
-  return <Screen><AppNavigator api={api} session={session} store={sessionStore} onSession={setSession} /></Screen>;
+  return <AppNavigator api={api} session={session} store={sessionStore} onSession={setSession} />;
 }
