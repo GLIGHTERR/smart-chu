@@ -4,6 +4,7 @@ import type { OwnerApiClient } from "../api/ownerApi";
 import type { SessionStore } from "../auth/sessionStore";
 import { AuthScreen } from "../screens/AuthScreen";
 import { HomeScreen } from "../screens/HomeScreen";
+import { Screen } from "../components/Screen";
 import type { Credentials, Session } from "../types/auth";
 
 type Props = { api: OwnerApiClient; session: Session | null; store: SessionStore; onSession: (session: Session) => void };
@@ -18,5 +19,5 @@ export function AppNavigator({ api, session, store, onSession }: Props) {
     onSession(nextSession);
   }
 
-  return <AuthScreen mode={mode} onSubmit={authenticate} onToggle={() => setMode(mode === "login" ? "register" : "login")} />;
+  return <Screen><AuthScreen mode={mode} onSubmit={authenticate} onToggle={() => setMode(mode === "login" ? "register" : "login")} /></Screen>;
 }
